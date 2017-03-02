@@ -1,0 +1,21 @@
+page.includeCSS {
+	t3o_snippets = EXT:t3o_snippets/Resources/Public/Css/Main.css
+}
+
+page.includeJS {
+	t3o_snippets_main = {$plugin.tx_t3osnippets.settings.pathToMainJs}
+	t3o_snippets_zeroclipboard = {$plugin.tx_t3osnippets.settings.pathToZeroClipboardJs}
+}
+page.jsInline {
+	130820 = TEXT
+	130820.data = PATH:{$plugin.tx_t3osnippets.settings.pathToZeroClipboardSwf}
+	130820.wrap (
+		ZeroClipboard.setMoviePath("/|");
+		var clip = new ZeroClipboard.Client();
+		clip.setHandCursor(true);
+		clip.glue('clipboard_button', 'clipboard');
+		clip.addEventListener('mouseDown', function(client) {
+			client.setText($('textarea#clipboard_code').val());
+		});
+)
+}

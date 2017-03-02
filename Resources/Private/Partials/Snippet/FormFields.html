@@ -1,0 +1,30 @@
+<label for="t3o-snippets-title">
+	<f:translate key="tx_t3osnippets_domain_model_snippet.title" /><span class="required">*</span>
+</label>
+<f:form.textfield property="title" id="t3o-snippets-title" /><br />
+
+<label for="t3o-snippets-category">
+	<f:translate key="tx_t3osnippets_domain_model_snippet.category" /><span class="required">*</span>
+</label>
+<f:form.select property="category" options="{categories}" optionValueField="uid" optionLabelField="title" /><br />
+
+<label for="t3o-snippets-description">
+	<f:translate key="tx_t3osnippets_domain_model_snippet.description" /><span class="required">*</span>
+</label>
+<f:form.textarea property="description" cols="40" rows="15" id="t3o-snippets-description" /><br />
+
+<label for="t3o-snippets-code">
+	<f:translate key="tx_t3osnippets_domain_model_snippet.code" /><span class="required">*</span>
+</label>
+<f:form.textarea property="code" cols="40" rows="15" id="t3o-snippets-code" /><br />
+
+<label for="t3o-snippets-tags">
+	<f:translate key="tx_t3osnippets_domain_model_snippet.tags" />
+</label>
+<f:form.textarea property="tags" cols="40" rows="15" id="t3o-snippets-tags" /><br />
+<ul class="tags">
+	<li><f:translate key="selectTags" /></li>
+	<f:for each="{tags}" as="tag">
+		<li><a nohref>{tag}</a></li>
+	</f:for>
+</ul>

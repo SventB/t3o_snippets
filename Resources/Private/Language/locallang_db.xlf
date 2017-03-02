@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="t3o_snippets">
+        <header/>
+        <body>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet" xml:space="preserve">
+                <source>Snippet</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.title" xml:space="preserve">
+                <source>Title:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.category" xml:space="preserve">
+                <source>Category:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.description" xml:space="preserve">
+                <source>Description:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.author" xml:space="preserve">
+                <source>Author:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.code" xml:space="preserve">
+                <source>Code:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.tags" xml:space="preserve">
+                <source>Tags:</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_category" xml:space="preserve">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_category.title" xml:space="preserve">
+                <source>Title:</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

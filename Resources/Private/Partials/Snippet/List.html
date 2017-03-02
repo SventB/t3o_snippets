@@ -1,0 +1,45 @@
+<div class="tx-t3o-snippets-list">
+
+	<h1>
+		<f:if condition="{category}">
+			<f:translate key="heading.list.category" arguments="{0: category.title}" />
+		</f:if>
+		<f:if condition="{author}">
+			<f:translate key="heading.list.author" arguments="{0: author.username}" />
+		</f:if>
+		<f:if condition="{search}">
+			<f:translate key="heading.list.search" arguments="{0: search}" />
+		</f:if>
+		<f:if condition="{0: category, 1: author, 2: search} == {0: '', 1: '', 2: ''}">
+			<f:translate key="heading.list" />
+		</f:if>
+	</h1>
+	<p><f:translate key="total" /> <f:count subject="{snippets}" /></p>
+
+	<f:flashMessages />
+
+	<f:widget.paginate objects="{snippets}" as="paginatedSnippets" configuration="{itemsPerPage: settings.listCount, insertAbove: settings.paginateAbove, insertBelow: settings.paginateBelow}">
+		<table>
+			<tr>
+				<th nowrap><f:link.action action="list" arguments="{order: 'title', orderDir: orderDir.title}"><f:translate key="tx_t3osnippets_domain_model_snippet.title" /></f:link.action></th>
+				<th nowrap><f:translate key="tx_t3osnippets_domain_model_snippet.category" /></th>
+				<th nowrap><f:translate key="tx_t3osnippets_domain_model_snippet.author" /></th>
+				<th nowrap><f:link.action action="list" arguments="{order: 'crdate', orderDir: orderDir.crdate}"><f:translate key="tx_t3osnippets_domain_model_snippet.crdate" /></f:link.action></th>
+				<th> </th>
+				<th> </th>
+			</tr>
+
+			<f:for each="{paginatedSnippets}" as="snippet">
+				<tr>
+					<td><f:link.action action="show" arguments="{snippet : snippet}" pageUid="{settings.pidShow}"> {snippet.title}</f:link.action></td>
+					<td><f:link.action arguments="{category : snippet.category}"> {snippet.category.title}</f:link.action></td>
+					<td><f:link.action arguments="{author : snippet.author}"> {snippet.author.username}</f:link.action></td>
+					<td><f:format.date format="F d, Y">@{snippet.crdate}</f:format.date></td>
+					<td><f:link.action action="edit" arguments="{snippet : snippet}"><f:translate key="edit" /></f:link.action></td>
+					<td><f:link.action action="delete" arguments="{snippet : snippet}"><f:translate key="delete" /></f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+	</f:widget.paginate>
+
+</div>

@@ -1,0 +1,26 @@
+plugin.tx_t3osnippets {
+	view {
+		# cat=plugin.tx_t3osnippets/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:t3o_snippets/Resources/Private/Templates/
+		# cat=plugin.tx_t3osnippets/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:t3o_snippets/Resources/Private/Partials/
+		# cat=plugin.tx_t3osnippets/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:t3o_snippets/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_t3osnippets//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings {
+		pathToMainJs = EXT:t3o_snippets/Resources/Public/Js/Main.js
+		pathToZeroClipboardJs = EXT:t3o_snippets/Resources/Public/Js/ZeroClipboard.js
+		pathToZeroClipboardSwf = EXT:t3o_snippets/Resources/Public/Swf/ZeroClipboard.swf
+		codeGeshiId = code-geshi
+		listCount = 5
+		paginateAbove = 0
+		paginateBelow = 1
+		pidList =
+		pidShow =
+		pidEdit =
+	}
+}

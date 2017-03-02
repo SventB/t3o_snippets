@@ -1,0 +1,16 @@
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+<f:section name="main">
+	<h1><f:translate key="heading.edit" /></h1>
+
+	<f:flashMessages />
+
+	<f:render partial="FormErrors" />
+
+	<f:form action="update" name="snippet" object="{snippet}" >
+		<f:render partial="Snippet/FormFields" arguments="{snippet:snippet, categories:categories}" />
+		<f:form.submit value="{f:translate(key:'save')}" />
+	</f:form>
+</f:section>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="t3o_snippets">
+        <header/>
+        <body>
+            <trans-unit id=".description" xml:space="preserve">
+                <source>Snippet record</source>
+            </trans-unit>
+            <trans-unit id=".details" xml:space="preserve">
+                <source>@TODO</source>
+            </trans-unit>
+            <trans-unit id="_.seeAlso" xml:space="preserve">
+                <source>See also... @TODO</source>
+            </trans-unit>
+            <trans-unit id="author.description" xml:space="preserve">
+                <source>When this snippet was submitted via frontend, this is the author.</source>
+            </trans-unit>
+            <trans-unit id="tags.description" xml:space="preserve">
+                <source>Tags, comma separated.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

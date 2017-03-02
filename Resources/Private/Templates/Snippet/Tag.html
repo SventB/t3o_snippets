@@ -1,0 +1,36 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<h1><f:format.printf arguments="{0: tag}"><f:translate key="heading.tag" /></f:format.printf></h1>
+	<p><f:translate key="total" /> <f:count subject="{snippets}" /></p>
+
+	<p><f:link.action action="list"><f:translate key="clearFilters" /></f:link.action></p>
+
+	<f:flashMessages />
+
+	<f:widget.paginate objects="{snippets}" as="paginatedSnippets" configuration="{itemsPerPage: settings.listCount, insertAbove: settings.paginateAbove, insertBelow: settings.paginateBelow}">
+		<table>
+			<tr>
+				<th><f:translate key="tx_t3osnippets_domain_model_snippet.title" /></th>
+				<th><f:translate key="tx_t3osnippets_domain_model_snippet.category" /></th>
+				<th><f:translate key="tx_t3osnippets_domain_model_snippet.author" /></th>
+				<th><f:translate key="tx_t3osnippets_domain_model_snippet.tstamp" /></th>
+				<th> </th>
+				<th> </th>
+			</tr>
+
+			<f:for each="{paginatedSnippets}" as="snippet">
+				<tr>
+					<td><f:link.action action="show" arguments="{snippet : snippet}"> {snippet.title}</f:link.action></td>
+					<td><f:link.action action="category" arguments="{category : snippet.category}"> {snippet.category.title}</f:link.action></td>
+					<td><f:link.action action="show" arguments="{snippet : snippet}"> {snippet.author.name}</f:link.action></td>
+					<td><f:format.date format="F d, Y">@{snippet.tstamp}</f:format.date></td>
+					<td><f:link.action action="edit" arguments="{snippet : snippet}"><f:translate key="edit" /></f:link.action></td>
+					<td><f:link.action action="delete" arguments="{snippet : snippet}"><f:translate key="delete" /></f:link.action></td>
+				</tr>
+			</f:for>
+		</table>
+	</f:widget.paginate>
+
+	<f:link.action action="new"><f:translate key="new" /></f:link.action>
+</f:section>

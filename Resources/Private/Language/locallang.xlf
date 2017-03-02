@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="t3o_snippets">
+        <header/>
+        <body>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet">
+                <source>Snippet</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.category">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.author">
+                <source>Author</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.code">
+                <source>Code</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.tags">
+                <source>Tags</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.crdate">
+                <source>Date</source>
+            </trans-unit>
+            <trans-unit id="tx_t3osnippets_domain_model_snippet.tstamp">
+                <source>Date modified</source>
+            </trans-unit>
+            <trans-unit id="error.snippet">
+                <source>An error occurred:</source>
+            </trans-unit>
+            <trans-unit id="error.newSnippet">
+                <source>An error occurred:</source>
+            </trans-unit>
+            <trans-unit id="error.title">
+                <source>Please provide a title</source>
+            </trans-unit>
+            <trans-unit id="error.description">
+                <source>Please provide a description</source>
+            </trans-unit>
+            <trans-unit id="error.code">
+                <source>Please provide a code</source>
+            </trans-unit>
+            <trans-unit id="heading.list">
+                <source>Snippets</source>
+            </trans-unit>
+            <trans-unit id="heading.list.author">
+                <source>Snippets by user "%s"</source>
+            </trans-unit>
+            <trans-unit id="heading.list.search">
+                <source>Snippets by search "%s"</source>
+            </trans-unit>
+            <trans-unit id="heading.list.category">
+                <source>Listing for snippets with category "%1$s"</source>
+            </trans-unit>
+            <trans-unit id="heading.list.author">
+                <source>Listing for snippets of author "%1$s"</source>
+            </trans-unit>
+            <trans-unit id="heading.tag">
+                <source>Listing for snippets with tag "%1$s"</source>
+            </trans-unit>
+            <trans-unit id="heading.edit">
+                <source>Edit snippet</source>
+            </trans-unit>
+            <trans-unit id="heading.new">
+                <source>New snippet</source>
+            </trans-unit>
+            <trans-unit id="search.category">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="search.search">
+                <source>Snippet</source>
+            </trans-unit>
+            <trans-unit id="total">
+                <source>Snippets found:</source>
+            </trans-unit>
+            <trans-unit id="totalAuthor">
+                <source>snippets</source>
+            </trans-unit>
+            <trans-unit id="selectTags">
+                <source>Select tags</source>
+            </trans-unit>
+            <trans-unit id="new">
+                <source>New snippet</source>
+            </trans-unit>
+            <trans-unit id="edit">
+                <source>Edit</source>
+            </trans-unit>
+            <trans-unit id="delete">
+                <source>Delete</source>
+            </trans-unit>
+            <trans-unit id="clearFilters">
+                <source>Clear all filters</source>
+            </trans-unit>
+            <trans-unit id="back">
+                <source>Back to list</source>
+            </trans-unit>
+            <trans-unit id="save">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="submit">
+                <source>Submit</source>
+            </trans-unit>
+            <trans-unit id="copyToClipboard">
+                <source>Copy to clipboard</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

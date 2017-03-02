@@ -1,0 +1,33 @@
+plugin.tx_t3osnippets {
+	view {
+		templateRootPath = {$plugin.tx_t3osnippets.view.templateRootPath}
+		partialRootPath = {$plugin.tx_t3osnippets.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_t3osnippets.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_t3osnippets.persistence.storagePid}
+		classes {
+			Tx_T3oSnippets_Domain_Model_Author {
+				mapping {
+					tableName = fe_users
+				}
+			}
+		}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		pathToMainJs = {$plugin.tx_t3osnippets.settings.pathToMainJs}
+		pathToZeroClipboardJs = {$plugin.tx_t3osnippets.settings.pathToZeroClipboardJs}
+		pathToZeroClipboardSwf = {$plugin.tx_t3osnippets.settings.pathToZeroClipboardSwf}
+		codeGeshiId = {$plugin.tx_t3osnippets.settings.codeGeshiId}
+		listCount = {$plugin.tx_t3osnippets.settings.listCount}
+		paginateAbove = {$plugin.tx_t3osnippets.settings.paginateAbove}
+		paginateBelow = {$plugin.tx_t3osnippets.settings.paginateBelow}
+		pidList = {$plugin.tx_t3osnippets.settings.pidList}
+		pidShow = {$plugin.tx_t3osnippets.settings.pidShow}
+		pidEdit = {$plugin.tx_t3osnippets.settings.pidEdit}
+	}
+}

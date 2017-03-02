@@ -1,0 +1,30 @@
+.tx-t3o-snippets label {
+	display: block;
+}
+
+.tx-t3o-snippets ul.tags li {
+	display: inline;
+}
+.tx-t3o-snippets ul.tags li a {
+	cursor: pointer;
+}
+
+.tx-t3o-snippets ul.f3-widget-paginator li {
+	display: inline;
+}
+
+.tx-t3o-snippets #clipboard {
+	position: relative;
+}
+.tx-t3o-snippets #clipboard_code {
+	display: none;
+}
+
+#tx-t3o-snippets-code-geshi {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+}
+#tx-t3o-snippets-code-geshi pre#code-geshi li {
+	white-space: pre;
+}

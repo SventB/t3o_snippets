@@ -1,0 +1,85 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+<f:section name="main">
+
+	<div class="tx-t3o-snippets-show">
+
+		<h1>{snippet.title}</h1>
+
+		<f:flashMessages />
+
+		<table>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.author" />
+				</td>
+				<td>
+					{snippet.author.name} (snippet.author.username) (<f:count>{authorSnippets}</f:count> <f:translate key="totalAuthor" />)
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.tstamp" />
+				</td>
+				<td>
+					<f:format.date format="F d, Y">@{snippet.tstamp}</f:format.date>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.crdate" />
+				</td>
+				<td>
+					<f:format.date format="F d, Y">@{snippet.crdate}</f:format.date>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.category" />
+				</td>
+				<td>
+					{snippet.category.title}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.description" />
+				</td>
+				<td>
+					<f:format.html>{snippet.description}</f:format.html>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.code" />
+				</td>
+				<td>
+					<f:format.raw>{codeGeshi}</f:format.raw>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<f:translate key="tx_t3osnippets_domain_model_snippet.tags" />
+				</td>
+				<td>
+					<ul>
+						<f:for each="{tags}" as="tag">
+							<li>
+								<f:link.action action="tag" arguments="{tag : tag}" pageUid="{settings.pidList}">{tag}</f:link.action>
+							</li>
+						</f:for>
+					</ul>
+				</td>
+			</tr>
+		</table>
+
+		<div id="clipboard">
+			<div id="clipboard_button"><f:translate key="copyToClipboard" /></div>
+			<textarea id="clipboard_code">{snippet.code}</textarea>
+		</div>
+
+	</div>
+
+</f:section>

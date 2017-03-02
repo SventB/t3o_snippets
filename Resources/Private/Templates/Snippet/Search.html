@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<div class="tx-t3o-snippets-search">
+		<h3><f:translate key="search.category" />:</h3>
+		<ul class="categories">
+			<f:for each="{categories}" as="c">
+				<li class="{f:if(condition: '{c} == {category}', then: 'act')}">
+					<f:link.action arguments="{category : c}"> {c.title}</f:link.action>
+				</li>
+			</f:for>
+		</ul>
+		<f:form action="listUncached" method="post">
+			<h3><f:translate key="search.search" />:</h3>
+			<p>
+				<f:form.textfield name="search" value="{search}" />
+			</p>
+			<p>
+				<f:form.submit name="submit" value="{f:translate(key:'submit')}" />
+			</p>
+		</f:form>
+	</div>
+
+</f:section>

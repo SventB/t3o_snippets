@@ -1,0 +1,16 @@
+<f:layout name="Default" />
+
+This template displays a NEW form for the current domain object.
+
+<f:section name="main">
+	<h1><f:translate key="heading.new" /></h1>
+
+	<f:flashMessages />
+
+	<f:render partial="FormErrors" />
+
+	<f:form action="create" name="newSnippet" object="{newSnippet}">
+		<f:render partial="Snippet/FormFields" arguments="{categories:categories, tags:tags}" />
+		<f:form.submit value="{f:translate(key:'save')}" />
+	</f:form>
+</f:section>

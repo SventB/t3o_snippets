@@ -1,0 +1,47 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>General</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Display</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">List</numIndex>
+										<numIndex index="1">Snippet->list</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Show</numIndex>
+										<numIndex index="1">Snippet->show</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">New</numIndex>
+										<numIndex index="1">Snippet->new;Snippet->create</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">Search</numIndex>
+										<numIndex index="1">Snippet->search</numIndex>
+									</numIndex>
+									<numIndex index="4">
+										<numIndex index="0">Edit</numIndex>
+										<numIndex index="1">Snippet->edit;Snippet->update</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
